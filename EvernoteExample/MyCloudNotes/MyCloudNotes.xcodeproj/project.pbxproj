@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB45817D1E8D9CAA008AC028 /* EvernoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45817B1E8D9AB2008AC028 /* EvernoteSDK.framework */; };
 		EBD1DACA1E89AE6600B60C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1DAC91E89AE6600B60C77 /* AppDelegate.swift */; };
 		EBD1DACC1E89AE6600B60C77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1DACB1E89AE6600B60C77 /* ViewController.swift */; };
 		EBD1DACF1E89AE6600B60C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD1DACD1E89AE6600B60C77 /* Main.storyboard */; };
@@ -14,12 +15,32 @@
 		EBD1DAD41E89AE6600B60C77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD1DAD21E89AE6600B60C77 /* LaunchScreen.storyboard */; };
 		EBD1DADF1E89AE6600B60C77 /* MyCloudNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1DADE1E89AE6600B60C77 /* MyCloudNotesTests.swift */; };
 		EBD1DAEA1E89AE6600B60C77 /* MyCloudNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1DAE91E89AE6600B60C77 /* MyCloudNotesUITests.swift */; };
-		EBD1DB061E89DCCD00B60C77 /* EvernoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD1DB021E89DBC000B60C77 /* EvernoteSDK.framework */; };
 		EBD1DB091E89DCD500B60C77 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD1DB081E89DCD500B60C77 /* MobileCoreServices.framework */; };
 		EBD1DB0B1E89DCDE00B60C77 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD1DB0A1E89DCDE00B60C77 /* libxml2.2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EB4581761E8D9AB2008AC028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB45816D1E8D9AB1008AC028 /* evernote-sdk-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BB3D1AD1524ED96001C4534;
+			remoteInfo = "evernote-sdk-ios";
+		};
+		EB4581781E8D9AB2008AC028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB45816D1E8D9AB1008AC028 /* evernote-sdk-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 865C383118F8BA2400ECB2BA;
+			remoteInfo = ENSDK;
+		};
+		EB45817A1E8D9AB2008AC028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB45816D1E8D9AB1008AC028 /* evernote-sdk-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9D60B71E27940A001740D8;
+			remoteInfo = EvernoteSDK;
+		};
 		EBD1DADB1E89AE6600B60C77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBD1DABE1E89AE6500B60C77 /* Project object */;
@@ -34,30 +55,10 @@
 			remoteGlobalIDString = EBD1DAC51E89AE6600B60C77;
 			remoteInfo = MyCloudNotes;
 		};
-		EBD1DAFD1E89DBC000B60C77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD1DAF71E89DBBF00B60C77 /* evernote-sdk-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0BB3D1AD1524ED96001C4534;
-			remoteInfo = "evernote-sdk-ios";
-		};
-		EBD1DAFF1E89DBC000B60C77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD1DAF71E89DBBF00B60C77 /* evernote-sdk-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 865C383118F8BA2400ECB2BA;
-			remoteInfo = ENSDK;
-		};
-		EBD1DB011E89DBC000B60C77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD1DAF71E89DBBF00B60C77 /* evernote-sdk-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6D9D60B71E27940A001740D8;
-			remoteInfo = EvernoteSDK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB45816D1E8D9AB1008AC028 /* evernote-sdk-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "evernote-sdk-ios.xcodeproj"; path = "../../evernote-cloud-sdk-ios/evernote-sdk-ios.xcodeproj"; sourceTree = "<group>"; };
 		EBD1DAC61E89AE6600B60C77 /* MyCloudNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD1DAC91E89AE6600B60C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD1DACB1E89AE6600B60C77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		EBD1DAE51E89AE6600B60C77 /* MyCloudNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCloudNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD1DAE91E89AE6600B60C77 /* MyCloudNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCloudNotesUITests.swift; sourceTree = "<group>"; };
 		EBD1DAEB1E89AE6600B60C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBD1DAF71E89DBBF00B60C77 /* evernote-sdk-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "evernote-sdk-ios.xcodeproj"; path = "../../evernote-cloud-sdk-ios/evernote-sdk-ios.xcodeproj"; sourceTree = "<group>"; };
 		EBD1DB081E89DCD500B60C77 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		EBD1DB0A1E89DCDE00B60C77 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -81,9 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB45817D1E8D9CAA008AC028 /* EvernoteSDK.framework in Frameworks */,
 				EBD1DB0B1E89DCDE00B60C77 /* libxml2.2.tbd in Frameworks */,
 				EBD1DB091E89DCD500B60C77 /* MobileCoreServices.framework in Frameworks */,
-				EBD1DB061E89DCCD00B60C77 /* EvernoteSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,9 +104,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB45816E1E8D9AB1008AC028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB4581771E8D9AB2008AC028 /* libevernote-sdk-ios.a */,
+				EB4581791E8D9AB2008AC028 /* ENSDK.framework */,
+				EB45817B1E8D9AB2008AC028 /* EvernoteSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EBD1DABD1E89AE6500B60C77 = {
 			isa = PBXGroup;
 			children = (
+				EB45816D1E8D9AB1008AC028 /* evernote-sdk-ios.xcodeproj */,
 				EBD1DAC81E89AE6600B60C77 /* MyCloudNotes */,
 				EBD1DADD1E89AE6600B60C77 /* MyCloudNotesTests */,
 				EBD1DAE81E89AE6600B60C77 /* MyCloudNotesUITests */,
@@ -156,20 +167,9 @@
 			path = MyCloudNotesUITests;
 			sourceTree = "<group>";
 		};
-		EBD1DAF81E89DBBF00B60C77 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EBD1DAFE1E89DBC000B60C77 /* libevernote-sdk-ios.a */,
-				EBD1DB001E89DBC000B60C77 /* ENSDK.framework */,
-				EBD1DB021E89DBC000B60C77 /* EvernoteSDK.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EBD1DB071E89DCD500B60C77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EBD1DAF71E89DBBF00B60C77 /* evernote-sdk-ios.xcodeproj */,
 				EBD1DB0A1E89DCDE00B60C77 /* libxml2.2.tbd */,
 				EBD1DB081E89DCD500B60C77 /* MobileCoreServices.framework */,
 			);
@@ -244,7 +244,6 @@
 				TargetAttributes = {
 					EBD1DAC51E89AE6600B60C77 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = V6RQ8Z5YZ3;
 						ProvisioningStyle = Automatic;
 					};
 					EBD1DAD91E89AE6600B60C77 = {
@@ -272,8 +271,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EBD1DAF81E89DBBF00B60C77 /* Products */;
-					ProjectRef = EBD1DAF71E89DBBF00B60C77 /* evernote-sdk-ios.xcodeproj */;
+					ProductGroup = EB45816E1E8D9AB1008AC028 /* Products */;
+					ProjectRef = EB45816D1E8D9AB1008AC028 /* evernote-sdk-ios.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -286,25 +285,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		EBD1DAFE1E89DBC000B60C77 /* libevernote-sdk-ios.a */ = {
+		EB4581771E8D9AB2008AC028 /* libevernote-sdk-ios.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libevernote-sdk-ios.a";
-			remoteRef = EBD1DAFD1E89DBC000B60C77 /* PBXContainerItemProxy */;
+			remoteRef = EB4581761E8D9AB2008AC028 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EBD1DB001E89DBC000B60C77 /* ENSDK.framework */ = {
+		EB4581791E8D9AB2008AC028 /* ENSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ENSDK.framework;
-			remoteRef = EBD1DAFF1E89DBC000B60C77 /* PBXContainerItemProxy */;
+			remoteRef = EB4581781E8D9AB2008AC028 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EBD1DB021E89DBC000B60C77 /* EvernoteSDK.framework */ = {
+		EB45817B1E8D9AB2008AC028 /* EvernoteSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = EvernoteSDK.framework;
-			remoteRef = EBD1DB011E89DBC000B60C77 /* PBXContainerItemProxy */;
+			remoteRef = EB45817A1E8D9AB2008AC028 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -492,7 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V6RQ8Z5YZ3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyCloudNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UDLAP.MyCloudNotes;
@@ -506,7 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V6RQ8Z5YZ3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyCloudNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UDLAP.MyCloudNotes;
