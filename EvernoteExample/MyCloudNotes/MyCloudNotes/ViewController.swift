@@ -40,6 +40,16 @@ class ViewController: UIViewController {
         ENSession.shared.authenticate(with: self, preferRegistration: false) { (_error: Error?) in
             //print("Error in authenticate...");
         }
+        
+        var userID : String
+        userID = ENSession.shared.userStore!.debugDescription
+        
+        if (ENSession.shared.isPremiumUser) {
+            print("welcome premium \(userID)")
+        }
+        
+        print("welcome \(userID)")
+        
         //welcomeLabel.text = ENSession.shared.userDisplayName
         
         print("executed authenticate...");
