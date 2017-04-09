@@ -244,6 +244,7 @@
 				TargetAttributes = {
 					EBD1DAC51E89AE6600B60C77 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V6RQ8Z5YZ3;
 						ProvisioningStyle = Automatic;
 					};
 					EBD1DAD91E89AE6600B60C77 = {
@@ -491,7 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V6RQ8Z5YZ3;
 				INFOPLIST_FILE = MyCloudNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UDLAP.MyCloudNotes;
@@ -505,7 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V6RQ8Z5YZ3;
 				INFOPLIST_FILE = MyCloudNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UDLAP.MyCloudNotes;

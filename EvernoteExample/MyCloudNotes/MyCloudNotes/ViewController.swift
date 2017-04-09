@@ -32,27 +32,52 @@ class ViewController: UIViewController {
     @IBAction func getCloudNotes(_ sender: UIButton) {
         print("Go get the notes");
         
-        //First setup you key session <this example has a developer token>
-        //ENSession.setSharedSessionConsumerKey(key,consumerSecret: secret, optionalHost: ENSessionHostSandbox);
-        ENSession.setSharedSessionDeveloperToken(developerToken, noteStoreUrl: noteStoreUrl);
+        /*
+         First setup you key session <this example has a developer token>
+         you can also initialize an acces to your actual account with a developer token like this:
+          -- ENSession.setSharedSessionDeveloperToken(developerToken, noteStoreUrl: noteStoreUrl);
+         your accunt needs to be preimum or business to do this.
+         the use of this code (setSharedSessionConsumerKey) will use oauth behind to allow your dev account access
+        */
+ 
+        ENSession.setSharedSessionConsumerKey(key,consumerSecret: secret, optionalHost: ENSessionHostSandbox);
+        
         print("executed setSharedSession");
         
         ENSession.shared.authenticate(with: self, preferRegistration: false) { (_error: Error?) in
             //print("Error in authenticate...");
         }
+        print("executed authenticate")
         
         var userID : String
-        userID = ENSession.shared.userStore!.debugDescription
+        //var foundNote : ENNote
+        let noteStore : ENNoteStoreClient = ENSession.shared.primaryNoteStore()!
+        //var notebook : ENNotebook = ENNotebook()
+        userID = ENSession.shared.userDisplayName
+
         
         if (ENSession.shared.isPremiumUser) {
             print("welcome premium \(userID)")
+        } else {
+            print("Welcome estandar userer \(userID)")
         }
         
-        print("welcome \(userID)")
+        print("NOTEBOOKSTORE: \(String(describing: noteStore.debugDescription))")
         
-        //welcomeLabel.text = ENSession.shared.userDisplayName
         
-        print("executed authenticate...");
+        // getting the notebooks and iterating through available notebooks
+        var notebook : ENNotebook
+        
+        ENSession.shared.listNotebooks { (notebook, error) in
+            print("got notebooks : \(String(describing: notebook))")
+            self.noteBookList.text = notebook!.description
+        }
+        
+
+        
+        welcomeLabel.text = "Welcome " + ENSession.shared.userDisplayName
+        
+        print("End of the code...");
         
         
         
