@@ -20,16 +20,18 @@ class ViewController: UIViewController {
 
     //variables
     @IBOutlet weak var noteBookList: UITextView!
-    
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var notebookList: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = "";
+        notebookList.text = "Notebooks for this user: "
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func getCloudNotes(_ sender: UIButton) {
+        //debugging notes
         print("Go get the notes");
         
         /*
@@ -68,9 +70,10 @@ class ViewController: UIViewController {
         // getting the notebooks and iterating through available notebooks
         var notebook : ENNotebook
         
+        
         ENSession.shared.listNotebooks { (notebook, error) in
             print("got notebooks : \(String(describing: notebook))")
-            self.noteBookList.text = notebook!.description
+            self.noteBookList.text = notebook!.debugDescription
         }
         
 
