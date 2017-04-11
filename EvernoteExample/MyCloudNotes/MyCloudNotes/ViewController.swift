@@ -22,11 +22,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var noteBookList: UITextView!
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var notebookList: UILabel!
+    @IBOutlet weak var notesLabel: UILabel!
+    @IBOutlet weak var notesTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = "";
         notebookList.text = "Notebooks for this user: "
+        notesLabel.text = ""
+        notesTextView.text = "Select a notebook to view the notes"
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -68,12 +72,16 @@ class ViewController: UIViewController {
         
         
         // getting the notebooks and iterating through available notebooks
-        var notebook : ENNotebook
-        
-        
+        //var _ : ENNotebook
+
         ENSession.shared.listNotebooks { (notebook, error) in
-            print("got notebooks : \(String(describing: notebook))")
-            self.noteBookList.text = notebook!.debugDescription
+            print("got notebooks \(String(describing: notebook?.count))  : \(String(describing: notebook))")
+            
+            for curNote in (notebook?.makeIterator())! {
+                self.noteBookList.text.append("- \(String(describing: curNote.name))")
+                
+            }
+            
         }
         
 

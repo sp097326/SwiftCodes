@@ -64,12 +64,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe3-lr-3Ni">
+                                <rect key="frame" x="30" y="347" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="noteBookList" destination="a4h-JI-i1G" id="Dgx-ea-RcW"/>
                         <outlet property="notebookList" destination="syu-08-e9Z" id="cF5-Pv-IBW"/>
+                        <outlet property="notesLabel" destination="fe3-lr-3Ni" id="cgh-bD-7s9"/>
+                        <outlet property="notesTextView" destination="45Z-mU-X2g" id="uUQ-B6-rsi"/>
                         <outlet property="welcomeLabel" destination="Q3z-Eo-tuS" id="SQz-O2-w08"/>
                     </connections>
                 </viewController>
