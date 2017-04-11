@@ -79,7 +79,6 @@ class ViewController: UIViewController {
             
             for curNote in (notebook?.makeIterator())! {
                 self.noteBookList.text.append("- \(String(describing: curNote.name))")
-                
             }
             
         }
