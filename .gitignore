@@ -1,10 +1,14 @@
 
+EvernoteExample/MyCloudNotes/MyCloudNotes.xcodeproj/project.xcworkspace/xcuserdata/swiftdev.xcuserdatad/UserInterfaceState.xcuserstate
+
+<<<<<<< HEAD
+EvernoteExample/MyCloudNotes/MyCloudNotes.xcodeproj/xcuserdata/swiftdev.xcuserdatad/xcschemes/MyCloudNotes.xcscheme
+=======
 EvernoteExample/MyCloudNotes/MyCloudNotes.xcodeproj/xcuserdata/swiftdevelopmentuser.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
 
 EvernoteExample/MyCloudNotes/MyCloudNotes.xcodeproj/xcuserdata/swiftdevelopmentuser.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
-
-EvernoteExample/MyCloudNotes/MyCloudNotes.xcodeproj/xcuserdata/swiftdevelopmentuser.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+<<<<<<< HEAD
 
 *.xcbkptlist
-
+*.xcuserstate
 evernote-cloud-sdk-ios
