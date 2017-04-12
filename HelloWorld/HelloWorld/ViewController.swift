@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttonPressed: UIButton!
     
+    @IBOutlet weak var myLabel: UILabel!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,11 +32,13 @@ class ViewController: UIViewController {
         
         let alertController : UIAlertController = UIAlertController(title: "Hola, me has pulsado", message: "Botón presionado", preferredStyle: .alert)
         
-        let okAction : UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let okAction : UIAlertAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
         
         alertController.addAction(okAction)
         
         present(alertController, animated: true, completion: nil)
+        
+        myLabel.text = "Hola \(nameTextField.text!) desde la etiqueta"
         
     }
 
