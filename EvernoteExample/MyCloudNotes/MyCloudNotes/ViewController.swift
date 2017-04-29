@@ -46,8 +46,8 @@ class ViewController: UIViewController {
          the use of this code (setSharedSessionConsumerKey) will use oauth behind to allow your dev account access
         */
  
-        ENSession.setSharedSessionConsumerKey(key,consumerSecret: secret, optionalHost: ENSessionHostSandbox);
-        
+        //ENSession.setSharedSessionConsumerKey(key,consumerSecret: secret, optionalHost: ENSessionHostSandbox);
+        ENSession.setSharedSessionDeveloperToken(developerToken, noteStoreUrl: noteStoreUrl);
         print("executed setSharedSession");
         
         ENSession.shared.authenticate(with: self, preferRegistration: false) { (_error: Error?) in
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
             print("got notebooks \(String(describing: notebook?.count))  : \(String(describing: notebook))")
             
             for curNote in (notebook?.makeIterator())! {
-                self.noteBookList.text.append("- \(String(describing: curNote.name))")
+                self.noteBookList.text.append("- \(String(describing: curNote.name!))")
             }
             
         }
