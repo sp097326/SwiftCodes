@@ -44,16 +44,16 @@ class ViewController: UIViewController {
         if conversionType.selectedSegmentIndex == 0 {
             //kms a mlls
             print("vamos a convertir \(distancia) Kilómetros a millas")
-            
             convertedValue = Float(distancia / milleUnit)
-            resultLbl.text = "\(convertedValue) millas"
+            let formatedValue = String(format: "%.2f", convertedValue)
+            resultLbl.text = "\(formatedValue) millas"
             
             
         } else {
             print("vamos a convertir \(distancia) millas a kilómetros")
-            
             convertedValue = Float(distancia * milleUnit)
-            resultLbl.text = "\(convertedValue) kilómetros"
+            let formatedValue = String(format: "%.2f", convertedValue)
+            resultLbl.text = "\(formatedValue) kilómetros"
         }
     }
 }

@@ -45,19 +45,25 @@ class ViewController: UIViewController {
          your accunt needs to be preimum or business to do this.
          the use of this code (setSharedSessionConsumerKey) will use oauth behind to allow your dev account access
         */
+        ENSession.setSharedSessionDeveloperToken(developerToken, noteStoreUrl: noteStoreUrl);
+
  
         //ENSession.setSharedSessionConsumerKey(key,consumerSecret: secret, optionalHost: ENSessionHostSandbox);
+<<<<<<< Updated upstream
         ENSession.setSharedSessionDeveloperToken(developerToken, noteStoreUrl: noteStoreUrl);
+=======
+        
+>>>>>>> Stashed changes
         print("executed setSharedSession");
         
         ENSession.shared.authenticate(with: self, preferRegistration: false) { (_error: Error?) in
             //print("Error in authenticate...");
         }
-        print("executed authenticate")
+        print("executed authenticate: \(ENSession.shared.isAuthenticated)")
         
         var userID : String
         //var foundNote : ENNote
-        let noteStore : ENNoteStoreClient = ENSession.shared.primaryNoteStore()!
+        //let noteStore : ENNoteStoreClient = ENSession.shared.primaryNoteStore()!
         //var notebook : ENNotebook = ENNotebook()
         userID = ENSession.shared.userDisplayName
 
@@ -68,8 +74,6 @@ class ViewController: UIViewController {
             print("Welcome estandar userer \(userID)")
         }
         
-        print("NOTEBOOKSTORE: \(String(describing: noteStore.debugDescription))")
-        
         
         // getting the notebooks and iterating through available notebooks
         //var _ : ENNotebook
@@ -77,8 +81,14 @@ class ViewController: UIViewController {
         ENSession.shared.listNotebooks { (notebook, error) in
             print("got notebooks \(String(describing: notebook?.count))  : \(String(describing: notebook))")
             
+<<<<<<< Updated upstream
             for curNote in (notebook?.makeIterator())! {
                 self.noteBookList.text.append("- \(String(describing: curNote.name!))")
+=======
+            for curNotebook in (notebook?.makeIterator())! {
+                self.noteBookList.text.append("- \(String(describing: curNotebook.name!))")
+                
+>>>>>>> Stashed changes
             }
             
         }
