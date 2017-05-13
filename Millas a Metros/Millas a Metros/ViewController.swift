@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLbl: UILabel!
     
     let milleUnit : Double = 1.609
+    let unidades = { "millas"; "kilómetros" }
     
     
     override func viewDidLoad() {
@@ -30,6 +31,11 @@ class ViewController: UIViewController {
     }
 
 
+    func reloadView(convertedValue : Float, tipoConversion: String) {
+        let formatedValue = String(format: "%.2f", convertedValue) //float dos decimales
+        resultLbl.text = "\(formatedValue) \(tipoConversion)"
+    }
+    
     @IBAction func convertPressed(_ sender: UIButton) {
         
         let distanciaTxt = distanceTxtFld.text
@@ -45,16 +51,14 @@ class ViewController: UIViewController {
             //kms a mlls
             print("vamos a convertir \(distancia) Kilómetros a millas")
             convertedValue = Float(distancia / milleUnit)
-            let formatedValue = String(format: "%.2f", convertedValue)
-            resultLbl.text = "\(formatedValue) millas"
-            
+            reloadView(convertedValue: convertedValue, tipoConversion: "millas")
             
         } else {
             print("vamos a convertir \(distancia) millas a kilómetros")
             convertedValue = Float(distancia * milleUnit)
-            let formatedValue = String(format: "%.2f", convertedValue)
-            resultLbl.text = "\(formatedValue) kilómetros"
-        }
+            reloadView(convertedValue: convertedValue, tipoConversion: "kilómetros")
+        } // no cases should fall here
     }
+    
 }
 
