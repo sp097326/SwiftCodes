@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLbl: UILabel!
     
     let milleUnit : Double = 1.609
-    let unidades = { "millas"; "kilómetros" }
+    //let unidades = { "millas"; "kilómetros" }
     
     
     override func viewDidLoad() {
@@ -38,26 +38,26 @@ class ViewController: UIViewController {
     
     @IBAction func convertPressed(_ sender: UIButton) {
         
-        let distanciaTxt = distanceTxtFld.text
-        var distancia : Double = 0
-        if distanciaTxt == "" {
-            print("show alert about using a value")
-        } else {
-            distancia = Double(distanciaTxt!)!
-        }
+        //var distancia : Double = 0
+        if let distanciaTxt = distanceTxtFld.text, let distancia = Double(distanciaTxt) {
         
-        let convertedValue : Float
-        if conversionType.selectedSegmentIndex == 0 {
-            //kms a mlls
-            print("vamos a convertir \(distancia) Kilómetros a millas")
-            convertedValue = Float(distancia / milleUnit)
-            reloadView(convertedValue: convertedValue, tipoConversion: "millas")
+            let convertedValue : Float
+            if conversionType.selectedSegmentIndex == 0 {
+                //kms a mlls
+                print("vamos a convertir \(distancia) Kilómetros a millas")
+                convertedValue = Float(distancia / milleUnit)
+                reloadView(convertedValue: convertedValue, tipoConversion: "millas")
             
-        } else {
-            print("vamos a convertir \(distancia) millas a kilómetros")
-            convertedValue = Float(distancia * milleUnit)
-            reloadView(convertedValue: convertedValue, tipoConversion: "kilómetros")
-        } // no cases should fall here
+                } else {
+                    print("vamos a convertir \(distancia) millas a kilómetros")
+                    convertedValue = Float(distancia * milleUnit)
+                    reloadView(convertedValue: convertedValue, tipoConversion: "kilómetros")
+                } // no cases should fall here
+            
+            
+            } else {
+                resultLbl.text = "El valor introducido no es correcto o fue omitido"
+            }
     }
     
 }
