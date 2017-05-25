@@ -20,11 +20,97 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kbi-LT-O9p">
+                                <rect key="frame" x="43.5" y="28" width="233.5" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J&amp;B's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZw-wJ-5vN">
+                                        <rect key="frame" x="62" y="0.0" width="109.5" height="91.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="37"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="13"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La tienda de ropa a tu medida" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uk9-qi-RMm">
+                                        <rect key="frame" x="0.0" y="91.5" width="233.5" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qak-xZ-inT">
+                                <rect key="frame" x="8" y="177" width="304" height="214"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camiseta-1" translatesAutoresizingMaskIntoConstraints="NO" id="6Mp-32-Gpt">
+                                        <rect key="frame" x="0.0" y="0.0" width="94.5" height="214"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camiseta-2" translatesAutoresizingMaskIntoConstraints="NO" id="IFg-Eu-nrz">
+                                        <rect key="frame" x="104.5" y="0.0" width="95" height="214"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camiseta-3" translatesAutoresizingMaskIntoConstraints="NO" id="IGV-Uq-cN6">
+                                        <rect key="frame" x="209.5" y="0.0" width="94.5" height="214"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5Wx-61-Mcx">
+                                <rect key="frame" x="60" y="462" width="200" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTv-o5-CGv">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="37"/>
+                                        <color key="backgroundColor" red="1" green="0.26503378292478208" blue="0.82749639460420754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="cAC-FF-RoG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="Regístrate gratis">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJT-2a-Y6a">
+                                        <rect key="frame" x="0.0" y="49" width="200" height="37"/>
+                                        <color key="backgroundColor" red="1" green="0.26503378290000001" blue="0.82749639460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="olH-tU-mUU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="Entra ahora">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact" spacing="6"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kbi-LT-O9p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="327-NF-0Ec">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="5Wx-61-Mcx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zY-qA-L5g"/>
+                            <constraint firstItem="Kbi-LT-O9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mf2-oV-cYV"/>
+                            <constraint firstAttribute="trailing" secondItem="Qak-xZ-inT" secondAttribute="trailing" constant="8" id="RHt-qM-TYR"/>
+                            <constraint firstItem="Qak-xZ-inT" firstAttribute="top" secondItem="Kbi-LT-O9p" secondAttribute="bottom" constant="15" id="WP0-cl-rXg">
+                                <variation key="heightClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="Qak-xZ-inT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hyT-tj-C7Q"/>
+                            <constraint firstItem="Qak-xZ-inT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="mbj-Ks-BDs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Wx-61-Mcx" secondAttribute="bottom" constant="20" id="rKn-PC-M9X">
+                                <variation key="heightClass=compact" constant="8"/>
+                            </constraint>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.25" y="120.4225352112676"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camiseta-1" width="221" height="214"/>
+        <image name="camiseta-2" width="217" height="211"/>
+        <image name="camiseta-3" width="215" height="202"/>
+    </resources>
 </document>
