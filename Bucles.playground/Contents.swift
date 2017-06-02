@@ -65,7 +65,11 @@ for (index, dwarfName) in names.enumerated() {
 
 //EJERCICIO SOLICITA: SECTION 15, LECTURE 155
 
-var favoriteMovies = ["Aliens","The Matrix", "Ghostbusters", "The Avengers", "IronMan"]
+var favoriteMovies = ["Aliens",
+                      "The Matrix",
+                      "Ghostbusters",
+                      "The Avengers",
+                      "IronMan"]
 
 for movieName in favoriteMovies {
     if (movieName == "Ghostbusters") {
@@ -84,4 +88,19 @@ var extras = ["Salchichas"  : 0.25,
               "Peperoni"    : 0.17 ]
 
 
+for (key, value) in extras {
+    print("El valor de añadir \(key) es de \(value) €")
+}
+
+//recorrer solo las llaves del diccionario
+for key in extras.keys {
+    print("El ingrediente que puedes añadir es \(key) y cuesta \(extras[key]!)" )
+}
+
+//recorrer los valores del diccionario
+for value in extras.values {
+    print("El costo de agregar ingredientes es \(value)")
+    
+}
+//OJO: Las variables que recorren los valores de los dictionaries como value, key, etc. no son modificables, son de solo lectura
 
