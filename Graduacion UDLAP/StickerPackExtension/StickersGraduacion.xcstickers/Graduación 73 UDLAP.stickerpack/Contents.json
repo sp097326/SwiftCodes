@@ -1,0 +1,29 @@
+{
+  "stickers" : [
+    {
+      "filename" : "Pollo.sticker"
+    },
+    {
+      "filename" : "Cata.sticker"
+    },
+    {
+      "filename" : "RayLeon.sticker"
+    },
+    {
+      "filename" : "Cantanelo.sticker"
+    },
+    {
+      "filename" : "Azteca.sticker"
+    },
+    {
+      "filename" : "Berni.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "large"
+  }
+}
