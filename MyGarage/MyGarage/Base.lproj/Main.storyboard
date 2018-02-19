@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyGarage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JeH-8p-zzJ">
+                                <rect key="frame" x="16" y="28" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JeH-8p-zzJ" secondAttribute="height" multiplier="1:1" id="kGd-O8-jSM"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hlb-8E-rGy">
+                                <rect key="frame" x="16" y="379" width="343" height="288"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOf-h1-1Ra">
+                                        <rect key="frame" x="119.5" y="0.0" width="104" height="41"/>
+                                        <state key="normal" title="Cambiar coche"/>
+                                        <connections>
+                                            <action selector="changeCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Bp-Vm-jWQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOp-DT-uZM">
+                                        <rect key="frame" x="143" y="41" width="57" height="41.5"/>
+                                        <state key="normal" title="Acelerar"/>
+                                        <connections>
+                                            <action selector="acceleratePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CkE-Su-zg6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcL-j2-Zu6">
+                                        <rect key="frame" x="126.5" y="82.5" width="90" height="41"/>
+                                        <state key="normal" title="Añadir 10 km"/>
+                                        <connections>
+                                            <action selector="add10kms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDH-Gb-8uF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-fx-n6b">
+                                        <rect key="frame" x="150.5" y="123.5" width="42" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-PU-WMx">
+                                        <rect key="frame" x="150.5" y="164.5" width="42" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwU-eX-IyC">
+                                        <rect key="frame" x="150.5" y="205.5" width="42" height="41.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfX-Da-JbE">
+                                        <rect key="frame" x="150.5" y="247" width="42" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hlb-8E-rGy" secondAttribute="trailing" id="G5u-BC-s5g"/>
+                            <constraint firstItem="JeH-8p-zzJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="aQ5-ns-mTr"/>
+                            <constraint firstItem="Hlb-8E-rGy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cqK-mU-9RZ"/>
+                            <constraint firstItem="JeH-8p-zzJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dTq-NN-WzA"/>
+                            <constraint firstItem="Hlb-8E-rGy" firstAttribute="top" secondItem="JeH-8p-zzJ" secondAttribute="bottom" constant="8" id="mFG-Ui-NHb"/>
+                            <constraint firstItem="JeH-8p-zzJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rcv-XH-Zo8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hlb-8E-rGy" secondAttribute="bottom" id="wyj-xW-In5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JeH-8p-zzJ" id="BUC-cD-R01"/>
+                        <outlet property="label1" destination="mJ4-fx-n6b" id="wx2-j4-wMe"/>
+                        <outlet property="label2" destination="1cX-PU-WMx" id="6WO-Q2-dIB"/>
+                        <outlet property="label3" destination="VwU-eX-IyC" id="KKu-Le-hjl"/>
+                        <outlet property="label4" destination="CfX-Da-JbE" id="OM6-RT-9Jl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="103.89805097451276"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,22 +1,22 @@
 {
   "stickers" : [
     {
-      "filename" : "Pollo.sticker"
-    },
-    {
       "filename" : "Cata.sticker"
     },
     {
-      "filename" : "RayLeon.sticker"
-    },
-    {
-      "filename" : "Cantanelo.sticker"
+      "filename" : "Berni.sticker"
     },
     {
       "filename" : "Azteca.sticker"
     },
     {
-      "filename" : "Berni.sticker"
+      "filename" : "RayLeon.sticker"
+    },
+    {
+      "filename" : "Pollo.sticker"
+    },
+    {
+      "filename" : "Cantanelo.sticker"
     }
   ],
   "info" : {

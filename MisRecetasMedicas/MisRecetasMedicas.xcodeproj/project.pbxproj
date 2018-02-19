@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC3089672012AAEB0029D9A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3089662012AAEB0029D9A4 /* AppDelegate.swift */; };
+		EC3089692012AAEB0029D9A4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3089682012AAEB0029D9A4 /* MasterViewController.swift */; };
+		EC30896B2012AAEB0029D9A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30896A2012AAEB0029D9A4 /* DetailViewController.swift */; };
+		EC30896E2012AAEB0029D9A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC30896C2012AAEB0029D9A4 /* Main.storyboard */; };
+		EC3089702012AAEB0029D9A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC30896F2012AAEB0029D9A4 /* Assets.xcassets */; };
+		EC3089732012AAEB0029D9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3089712012AAEB0029D9A4 /* LaunchScreen.storyboard */; };
+		EC630321201AA2FB007FE427 /* receta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC630320201AA2FB007FE427 /* receta.swift */; };
+		EC63032320225383007FE427 /* Medicamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63032220225383007FE427 /* Medicamento.swift */; };
+		EC6303252022B6FC007FE427 /* Medico.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6303242022B6FC007FE427 /* Medico.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC3089632012AAEB0029D9A4 /* MisRecetasMedicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisRecetasMedicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3089662012AAEB0029D9A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3089682012AAEB0029D9A4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		EC30896A2012AAEB0029D9A4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EC30896D2012AAEB0029D9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC30896F2012AAEB0029D9A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC3089722012AAEB0029D9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC3089742012AAEB0029D9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC630320201AA2FB007FE427 /* receta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = receta.swift; sourceTree = "<group>"; };
+		EC63032220225383007FE427 /* Medicamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicamento.swift; sourceTree = "<group>"; };
+		EC6303242022B6FC007FE427 /* Medico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medico.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC3089602012AAEB0029D9A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC30895A2012AAEA0029D9A4 = {
+			isa = PBXGroup;
+			children = (
+				EC3089652012AAEB0029D9A4 /* MisRecetasMedicas */,
+				EC3089642012AAEB0029D9A4 /* Products */,
+				EC30897A2012AB270029D9A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC3089642012AAEB0029D9A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC3089632012AAEB0029D9A4 /* MisRecetasMedicas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3089652012AAEB0029D9A4 /* MisRecetasMedicas */ = {
+			isa = PBXGroup;
+			children = (
+				EC63031F201AA2D5007FE427 /* model */,
+				EC3089662012AAEB0029D9A4 /* AppDelegate.swift */,
+				EC3089682012AAEB0029D9A4 /* MasterViewController.swift */,
+				EC30896A2012AAEB0029D9A4 /* DetailViewController.swift */,
+				EC30896C2012AAEB0029D9A4 /* Main.storyboard */,
+				EC30896F2012AAEB0029D9A4 /* Assets.xcassets */,
+				EC3089712012AAEB0029D9A4 /* LaunchScreen.storyboard */,
+				EC3089742012AAEB0029D9A4 /* Info.plist */,
+			);
+			path = MisRecetasMedicas;
+			sourceTree = "<group>";
+		};
+		EC30897A2012AB270029D9A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC63031F201AA2D5007FE427 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EC630320201AA2FB007FE427 /* receta.swift */,
+				EC63032220225383007FE427 /* Medicamento.swift */,
+				EC6303242022B6FC007FE427 /* Medico.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC3089622012AAEB0029D9A4 /* MisRecetasMedicas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3089772012AAEB0029D9A4 /* Build configuration list for PBXNativeTarget "MisRecetasMedicas" */;
+			buildPhases = (
+				EC30895F2012AAEB0029D9A4 /* Sources */,
+				EC3089602012AAEB0029D9A4 /* Frameworks */,
+				EC3089612012AAEB0029D9A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MisRecetasMedicas;
+			productName = MisRecetasMedicas;
+			productReference = EC3089632012AAEB0029D9A4 /* MisRecetasMedicas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC30895B2012AAEB0029D9A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = swiftdevelopment;
+				TargetAttributes = {
+					EC3089622012AAEB0029D9A4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = V6RQ8Z5YZ3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EC30895E2012AAEB0029D9A4 /* Build configuration list for PBXProject "MisRecetasMedicas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC30895A2012AAEA0029D9A4;
+			productRefGroup = EC3089642012AAEB0029D9A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC3089622012AAEB0029D9A4 /* MisRecetasMedicas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3089612012AAEB0029D9A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3089732012AAEB0029D9A4 /* LaunchScreen.storyboard in Resources */,
+				EC3089702012AAEB0029D9A4 /* Assets.xcassets in Resources */,
+				EC30896E2012AAEB0029D9A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC30895F2012AAEB0029D9A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC30896B2012AAEB0029D9A4 /* DetailViewController.swift in Sources */,
+				EC3089692012AAEB0029D9A4 /* MasterViewController.swift in Sources */,
+				EC6303252022B6FC007FE427 /* Medico.swift in Sources */,
+				EC63032320225383007FE427 /* Medicamento.swift in Sources */,
+				EC3089672012AAEB0029D9A4 /* AppDelegate.swift in Sources */,
+				EC630321201AA2FB007FE427 /* receta.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC30896C2012AAEB0029D9A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC30896D2012AAEB0029D9A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC3089712012AAEB0029D9A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3089722012AAEB0029D9A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC3089752012AAEB0029D9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC3089762012AAEB0029D9A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC3089782012AAEB0029D9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6RQ8Z5YZ3;
+				INFOPLIST_FILE = MisRecetasMedicas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.udlap.swift.MisRecetasMedicas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC3089792012AAEB0029D9A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6RQ8Z5YZ3;
+				INFOPLIST_FILE = MisRecetasMedicas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.udlap.swift.MisRecetasMedicas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC30895E2012AAEB0029D9A4 /* Build configuration list for PBXProject "MisRecetasMedicas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3089752012AAEB0029D9A4 /* Debug */,
+				EC3089762012AAEB0029D9A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3089772012AAEB0029D9A4 /* Build configuration list for PBXNativeTarget "MisRecetasMedicas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3089782012AAEB0029D9A4 /* Debug */,
+				EC3089792012AAEB0029D9A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC30895B2012AAEB0029D9A4 /* Project object */;
+}
